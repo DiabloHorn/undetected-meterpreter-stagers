@@ -1,0 +1,13 @@
+This is the repository for this blog post:
+http://diablohorn.wordpress.com/2013/02/21/we-bypassed-antivirus-how-about-idsips/
+
+This is just some C code that acts as the stager and reads the XORed stage from the network.
+To avoid modifying metasploit for this, you'll need the python proxy that sits between metasploit and these stagers.
+
+Visually it looks like this:
+
+[metasploit] <--unencrypted stage--> [encrypting python proxy] <--encrypted stage--> [custom stager]
+
+This gives you the flexibility to swap XOR for AES if you prefer stronger crypto.
+
+Read the blog entry for further information and usage
