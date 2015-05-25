@@ -1,9 +1,15 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "reverse_tcp_standalone", "reverse_tcp_standalone\reverse_tcp_standalone.vcxproj", "{EA75B247-53CF-402D-AF31-78026D5A3A47}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bind_tcp_standalone", "bind_tcp_standalone\bind_tcp_standalone.vcxproj", "{7A80C5FA-6637-4D18-ACE7-D23BC1C2E449}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "new_reverse_meterpreter", "new_reverse_meterpreter\new_reverse_meterpreter.vcxproj", "{C9B2CE2B-6543-46D6-AE19-84368DCF5EA8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "new_bind_meterpreter", "new_bind_meterpreter\new_bind_meterpreter.vcxproj", "{C227941C-4010-455E-8DE8-B3DACFDB6EEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +25,14 @@ Global
 		{7A80C5FA-6637-4D18-ACE7-D23BC1C2E449}.Debug|Win32.Build.0 = Debug|Win32
 		{7A80C5FA-6637-4D18-ACE7-D23BC1C2E449}.Release|Win32.ActiveCfg = Release|Win32
 		{7A80C5FA-6637-4D18-ACE7-D23BC1C2E449}.Release|Win32.Build.0 = Release|Win32
+		{C9B2CE2B-6543-46D6-AE19-84368DCF5EA8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C9B2CE2B-6543-46D6-AE19-84368DCF5EA8}.Debug|Win32.Build.0 = Debug|Win32
+		{C9B2CE2B-6543-46D6-AE19-84368DCF5EA8}.Release|Win32.ActiveCfg = Release|Win32
+		{C9B2CE2B-6543-46D6-AE19-84368DCF5EA8}.Release|Win32.Build.0 = Release|Win32
+		{C227941C-4010-455E-8DE8-B3DACFDB6EEF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C227941C-4010-455E-8DE8-B3DACFDB6EEF}.Debug|Win32.Build.0 = Debug|Win32
+		{C227941C-4010-455E-8DE8-B3DACFDB6EEF}.Release|Win32.ActiveCfg = Release|Win32
+		{C227941C-4010-455E-8DE8-B3DACFDB6EEF}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

